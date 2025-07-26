@@ -4,94 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="description" content="Effective Solutions for Your Business" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="./images/logo.png" />
     <title>Business promotion</title>
   </head>
   <body>
-    <!-- header  -->
-    <header>
-      <a href="./index.html">
-        <img src="./images/logo.png" alt="logo" width="40" height="36" />
-        Product
-      </a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Product</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./index.html">Resources</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
-    </header>
+    <!-- HEADER  -->
+  <header class="header">
+       <div class="container header-container">
+         <a class="header-logo logo" href="./index.html">
+          <img src="./images/logo.png" alt="logo" width="40" height="36">
+          Product
+         </a>
+         <nav class="header-nav">
+              <ul class="header-nav-list">
+                <li class="header-nav-item"><a class="header-nav-link current" href="./index.html">Product</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" href="./pricing.html">Pricing</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" href="./customers.html">Customers</a></li>
+                <li class="header-nav-item"><a class="header-nav-link" href="">Resources</a></li>
+              </ul>
+         
+         </nav>
+         <ul class="header-btn-list">
+          <li class="header-btn-item"><button class="header-btn" type="button">Sign In</button></li>
+          <li class="header-btn-item"><button class="header-btn" type="button">Sign Up</button></li>
+         </ul>
+       </div>
+  </header>
+
+    <!-- MAIN CONTENT -->
     <main>
-      <!-- Work at the speed of thought -->
-      <section>
-        <h1>Work at the speed of thought</h1>
-        <p>
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul>
-          <li><button type="button">Get started</button></li>
-          <li><button type="button">Watch the Video</button></li>
-        </ul>
-        <img
-          src="./images/hero-img.svg"
-          alt="hero-img"
-          width="610"
-          height="555" />
-      </section>
-      <!-- Product was Built Specifically for You -->
-      <section>
-        <h2>Product was Built Specifically for You</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/icon-1.svg"
-              alt="icon click"
-              width="54"
-              height="61.89" />
+   <section class="hero">
+     <div class="container hero-container">
+      <div>
+          <h1>Work at the speed of thought</h1>
+          <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
+          <ul>
+            <li><button type="button">Get started</button></li>
+            <li><button type="button">Watch the Video</button></li>
+          </ul>
+      </div>
+        <img src="./images/hero-img.svg" alt="hero-img" width="610" height="555">
+     </div>
+    </section>
+
+    <section>
+      <h2>Product was Built Specifically for You</h2>
+      <ul>
+        <li>
+         
+            <img src="./images/icon-1.svg" alt="first-click-tests" />
             <h3>First click tests</h3>
-            <p>While most people enjoy casino gambling,</p>
-          </li>
-          <li>
-            <img
-              src="./images/icon-2.svg"
-              alt="line"
-              width="54"
-              height="61.89" />
+         
+          <p>While most people enjoy casino gambling,</p>
+        </li>
+        <li>
+        
+            <img src="./images/icon-2.svg" alt="design-surveys" />
             <h3>Design surveys</h3>
-            <p>Sports betting, lottery and bingo playing for the fun</p>
-          </li>
-          <li>
-            <img
-              src="./images/icon-3.svg"
-              alt="heart"
-              width="54"
-              height="61.89" />
+        
+          <p>Sports betting, lottery and bingo playing for the fun</p>
+        </li>
+        <li>
+          
+            <img src="./images/icon-3.svg" alt="preference-tests" />
             <h3>Preference tests</h3>
-            <p>The Myspace page defines the individual.</p>
-          </li>
-          <li>
-            <img src="./images/icon-4.svg" alt="clock" width="54" height="54" />
+          
+          <p>The Myspace page defines the individual.</p>
+        </li>
+        <li>
+         
+            <img src="./images/icon-4.svg" alt=fFive-second-tests" />
             <h3>Five second tests</h3>
-            <p>Personal choices and the overall personality of the person.</p>
-          </li>
-        </ul>
-        <button type="button">Sign Up Now</button>
-      </section>
+          
+          <p>Personal choices and the overall personality of the person.</p>
+        </li>
+      </ul>
+      <button type="button">sign up now</button>
+    </section>
       <!-- Services -->
       <section>
         <h2>Services</h2>
