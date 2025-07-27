@@ -69,10 +69,6 @@ button {
   gap: 30px;
 }
 
-/* .header-nav-item:not(:last-child) {
-  margin-right: 30px;
-} */
-
 .header-nav-link {
   padding: 26px 0;
   display: block;
@@ -100,11 +96,22 @@ button {
   color: #173a56;
 }
 
+.header-btn-list {
+  display: flex;
+  gap: 30px;
+}
 .header-btn:hover,
 .header-btn:focus {
   color: #fff;
   background-color: #02897a;
   border: none;
+}
+.watch:hover,
+.watch:focus {
+  color: #fff;
+  background-color: #02897a;
+  border: none;
+  text-decoration: none;
 }
 
 /* HERO  */
@@ -114,10 +121,50 @@ button {
   padding-bottom: 100px;
 }
 
+.start {
+  border-radius: 4px;
+  width: 178px;
+  height: 53px;
+  background: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+.watch {
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #02897a;
+}
+
+.hero-main-text {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #22343d;
+}
+.hero-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: #22343d;
+  padding-bottom: 45px;
+}
+
 .hero-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+/* product */
+
+.product-container {
+  display: flex;
+  align-items: center;
 }
 .product {
   font-weight: 700;
@@ -137,18 +184,42 @@ button {
 .product-item {
   /* display: flex;
   flex-direction: column; */
-  width: calc(100% - 90px) / 4;
+  width: calc((100% - 90px) / 4);
+  max-width: 255px;
 }
-
+.product-list-item {
+  font-weight: 600;
+  font-size: 22px;
+  color: #22343d;
+  padding-top: 18.11px;
+  padding-bottom: 13px;
+}
+.product-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+  color: #22343d;
+  padding-bottom: 76px;
+}
 .product-btn {
-  border: 1px solid #bcd0e5;
+  display: block;
+  border-color: #fff;
   border-radius: 4px;
-  min-width: 105px;
-  height: 42px;
-  background-color: #02897a;
-  margin: 50 auto 0 auto;
-  text-align: center;
+  width: 175px;
+  height: 53px;
+  background: #02897a;
   font-weight: 700;
   font-size: 16px;
   color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.product-btn:hover,
+.product-btn:focus {
+  color: #02897a;
+  background-color: #fff;
+  border-radius: 4px;
+  border-color: #02897a;
 }
