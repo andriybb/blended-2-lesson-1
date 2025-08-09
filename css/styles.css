@@ -223,3 +223,70 @@ button {
   border-radius: 4px;
   border-color: #02897a;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.services-container {
+}
+
+.section-contain {
+  display: flex;
+  gap: 84px;
+}
+
+.services {
+  width: 100%;
+}
+.pretext {
+  font-weight: 600;
+  font-size: 16px;
+  color: #22343d;
+}
+.episode {
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+  margin-bottom: 25px;
+}
+.services-text-main {
+  width: 486px;
+}
+.services-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  max-width: 486px;
+}
+.services-text-myspace {
+  max-width: 486px;
+  margin-bottom: 30px;
+}
+.services-text-unique {
+  margin-bottom: 25px;
+  max-width: 486px;
+}
+.episode-j {
+  margin-bottom: 12px;
+}
+.services-img {
+  width: 540px;
+}
+.support-check {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+  max-width: 450px;
+}
