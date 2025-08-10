@@ -29,10 +29,18 @@ img {
 }
 
 button {
+  display: block;
   cursor: pointer;
   font-family: inherit;
 }
+button {
+  transition: scale 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+}
 
+button:hover,
+button:focus {
+  scale: 1.1;
+}
 .container {
   margin: 0 auto;
   padding: 0 20px;
@@ -75,10 +83,6 @@ button {
 .current {
   font-weight: 600;
 }
-.header-btn-list {
-  display: flex;
-  gap: 21px;
-}
 
 .header-btn {
   border: 1px solid #bcd0e5;
@@ -101,13 +105,6 @@ button {
   background-color: #02897a;
   border: none;
 }
-.watch:hover,
-.watch:focus {
-  color: #fff;
-  background-color: #02897a;
-  border: none;
-  text-decoration: none;
-}
 
 /* HERO  */
 
@@ -126,15 +123,48 @@ button {
   color: #fff;
   text-decoration: none;
 }
-.watch {
+.header-btn-watch {
+  display: flex;
+  gap: 8px;
+  align-items: center;
   border: none;
+  border-radius: 4px;
   font-weight: 600;
   font-size: 16px;
   text-decoration: underline;
-  text-decoration-skip-ink: none;
+  text-decoration-skip-ink: auto;
   color: #02897a;
+  width: 100%;
+  height: 53px;
+  background-color: transparent;
+  padding: 0;
+  text-align: center;
+  text-shadow: none;
+  transition: scale 0.5s ease 0.2s, text-decoration 0.5s ease 0.5s;
 }
 
+.header-btn-watch:hover,
+.header-btn-watch:focus {
+  text-decoration: none;
+  scale: 1.2;
+}
+.icon-triangle {
+  fill: #02897a;
+  stroke: none;
+  filter: none;
+  transition: scale 0.5s ease 0.1s, stroke-width 0.5s ease 0.5s;
+}
+.header-btn-watch:hover > svg,
+.header-btn-watch:focus > svg {
+  fill: #fff;
+  stroke: #02897a;
+  stroke-width: 2px;
+  filter: drop-shadow(0px 0px 0.5px #02897a);
+  scale: 1.5;
+}
+.watch-box {
+  margin: auto 0;
+}
 .hero-main-text {
   font-weight: 700;
   font-size: 40px;
@@ -359,13 +389,74 @@ button {
   gap: 90px;
   margin: 0 auto 25px auto;
 }
+.strategies-container {
+  margin-bottom: 171px;
+}
+.strategies-main {
+  font-weight: 700;
+  font-size: 32px;
+  max-width: 539px;
+  text-align: left;
+  transition: color 0.5s ease, background-color 0.5s ease 0.5s;
+  margin: 0;
+  color: #22343d;
+}
 
+.strategies-text {
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 542px;
+  margin: 10px 0 40px;
+}
+.news-list {
+  display: flex;
+}
+.news-item {
+  width: 350px;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  transition: scale 0.5s ease;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+}
+.news-item img {
+  width: 100%;
+}
+.news-item.middle {
+  margin: 0 30px;
+}
+.news-author {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+.author {
+  font-weight: 700;
+}
+.news-theme {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: #22343d;
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+.news-theme:hover,
+.news-theme:focus {
+  color: #02897a;
+}
+.news-item:hover,
+.news-item:focus {
+  scale: 1.1;
+}
 .price-main {
   font-weight: 700;
   font-size: 32px;
   max-width: 539px;
   text-align: center;
-
+  transition: color 0.5s ease, background-color 0.5s ease 0.5s;
   margin: 0 auto;
   color: #22343d;
 }
@@ -376,4 +467,124 @@ button {
   font-size: 16px;
   max-width: 542px;
   margin: 25px auto 40px;
+}
+.price-text-added {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  margin-top: 8px;
+}
+.price-table {
+  display: flex;
+  gap: 72px;
+  width: 322px;
+  height: 456px;
+}
+
+.price-box {
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  min-width: 322px;
+  border-radius: 8px;
+  transition: scale 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+}
+.price-text-main {
+  font-weight: 700;
+  font-size: 24px;
+  color: #22343d;
+  background-color: inherit;
+  margin-top: 32px;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.price {
+  display: flex;
+  gap: 10px;
+  max-width: 187px;
+  height: 100px;
+  margin: 16px auto;
+
+  transition: color 0.5s ease, background-color 0.5s ease 0.5s;
+}
+
+.money {
+  text-align: left;
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 100px;
+  color: #02897a;
+  transition: color 0.5s ease, background-color 0.5s ease 0.5s;
+}
+
+.value-box {
+  display: flex;
+  align-items: center;
+}
+
+.money.value {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #02897a;
+  transition: color 0.5s ease, background-color 0.5s ease 0.5s;
+  margin-bottom: 4px;
+}
+.per-month {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #afafaf;
+}
+.price-text-circs {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 16px;
+  transition: color 0.5s ease, background-color 0.5s ease 0.5s;
+}
+
+.order-btn {
+  display: block;
+  border-radius: 8px;
+  border-color: #fff;
+  width: 139px;
+  height: 44px;
+  background: #02897a;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 32px;
+  transition: scale 0.5s ease;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+.order-btn:hover,
+.order-btn:focus {
+  color: #02897a;
+  background-color: #fff;
+  border-color: #02897a;
+}
+
+.price-box:hover h3,
+.price-box:focus h3 {
+  color: #fff;
+  background-color: #02897a;
+}
+.price-box:hover button,
+.price-box:focus button {
+  color: #02897a;
+  background-color: #fff;
+}
+.price-box:hover .price .money,
+.price-box:focus .price .money {
+  color: #fff;
+}
+.price-box:hover,
+.price-box:focus {
+  color: #fff;
+  background-color: #02897a;
+  scale: 1.1;
 }
