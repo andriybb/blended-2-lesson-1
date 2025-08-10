@@ -322,12 +322,17 @@ button {
   border-radius: 4px;
   border-color: #02897a;
 }
+
+.process-container {
+  margin-bottom: 100px;
+}
 .customer-box {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   width: 408px;
+  margin-bottom: 25px;
 }
 .customer-box img {
   width: 98px;
@@ -352,5 +357,5 @@ button {
   align-items: center;
   justify-content: center;
   gap: 90px;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 25px auto;
 }
