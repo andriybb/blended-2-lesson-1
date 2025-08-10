@@ -359,3 +359,21 @@ button {
   gap: 90px;
   margin: 0 auto 25px auto;
 }
+
+.price-main {
+  font-weight: 700;
+  font-size: 32px;
+  max-width: 539px;
+  text-align: center;
+
+  margin: 0 auto;
+  color: #22343d;
+}
+
+.price-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 542px;
+  margin: 25px auto 40px;
+}
