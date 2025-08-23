@@ -588,3 +588,62 @@ button:focus {
   background-color: #02897a;
   scale: 1.1;
 }
+
+/* clients-feedback */
+
+.clients-main {
+  line-height: 1.78125;
+  font-weight: 700;
+  font-size: 32px;
+  color: #22343d;
+  text-align: center;
+}
+.clients-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-align: center;
+  max-width: 537px;
+  text-align: center;
+}
+.clients-list {
+  display: flex;
+  gap: 64px;
+
+  margin-top: 40px;
+}
+.clients-list-item {
+}
+.clients-feedback {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 30px 35px;
+  width: 327px;
+  height: 240px;
+}
+.star {
+  fill: #f3cd03;
+}
+.not-star {
+  fill: transparent;
+  stroke: #f3cd03;
+}
+.feedback-text {
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  color: #737373;
+}
+.client-name-box {
+}
+.client-name {
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #02897a;
+}
