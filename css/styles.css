@@ -546,7 +546,7 @@ button:focus {
 .order-btn {
   display: block;
   border-radius: 8px;
-  border-color: #fff;
+  border-color: transparent;
   width: 139px;
   height: 44px;
   background: #02897a;
@@ -558,14 +558,14 @@ button:focus {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 32px;
-  transition: scale 0.5s ease;
-  transition: color 0.5s ease, background-color 0.5s ease;
+
+  transition: scale 0.8s ease, color 0.5s ease, background-color 0.5s ease;
 }
 .order-btn:hover,
 .order-btn:focus {
   color: #02897a;
   background-color: #fff;
-  border-color: #02897a;
+  scale: 1.2;
 }
 
 .price-box:hover h3,
@@ -597,6 +597,8 @@ button:focus {
   font-size: 32px;
   color: #22343d;
   text-align: center;
+  margin-bottom: 10px;
+  margin-top: 98px;
 }
 .clients-text {
   font-weight: 500;
@@ -604,8 +606,9 @@ button:focus {
   line-height: 1.75;
   letter-spacing: 0.01em;
   text-align: center;
-  max-width: 537px;
-  text-align: center;
+  color: #22343d;
+  width: 537px;
+  margin: 0 auto;
 }
 .clients-list {
   display: flex;
@@ -614,13 +617,24 @@ button:focus {
   margin-top: 40px;
 }
 .clients-list-item {
-}
-.clients-feedback {
+  width: 327px;
+  scale: 1;
   border: 1px solid #dedede;
   border-radius: 5px;
-  padding: 30px 35px;
-  width: 327px;
-  height: 240px;
+  transition: transform 0.5s ease 0.5s, border 0.45s ease-in-out;
+}
+.clients-list-item:hover,
+.clients-list-item:focus {
+  transform: scale(1.2);
+  border: 2px solid #02897a;
+}
+.clients-feedback {
+  padding: 28px 26px;
+}
+.stars-box {
+  display: flex;
+  gap: 3.7px;
+  margin: 0;
 }
 .star {
   fill: #f3cd03;
@@ -632,12 +646,23 @@ button:focus {
 .feedback-text {
   font-weight: 400;
   font-size: 16px;
-
-  line-height: 1.75;
+  margin: 16px 0;
+  line-height: 28px;
   letter-spacing: 0.01em;
   color: #737373;
 }
 .client-name-box {
+  width: 145px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 500;
+  font-size: 14px;
+
+  line-height: 1.71429;
+  letter-spacing: 0.01em;
+  color: #252b42;
 }
 .client-name {
   font-weight: 600;
@@ -646,4 +671,232 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.01em;
   color: #02897a;
+}
+.banner-box {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.banner-box-join {
+  border-radius: 32px;
+  width: 968px;
+  height: 345px;
+  background: #02897a;
+  margin: 0 auto;
+  transition: color 0.3s ease-in 0.1s, background-color 0.3s ease-in 0.1s,
+    scale 0.3s ease-in-out 0.1s;
+}
+
+.banner-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 49px;
+  margin-left: 51px;
+}
+
+.join-text {
+  font-weight: 600;
+  font-size: 32px;
+  width: 510px;
+  line-height: 1.514;
+  color: #fff;
+  transition: color 0.5s ease-in;
+  margin-bottom: 46px;
+}
+
+.join-btn {
+  border: 1px solid #02897a;
+  border-radius: 8px;
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+
+  text-align: center;
+  color: #02897a;
+  transition: color 0.7s ease-in, background-color 0.7s ease-in,
+    scale 0.5s ease-in;
+}
+.join-btn:hover,
+.join-btn:focus {
+  color: #fff;
+  background-color: #02897a;
+  border: none;
+}
+.banner-box-join:hover,
+.banner-box-join:focus {
+  color: #02897a;
+  background-color: transparent;
+  scale: 1.3;
+  border: 2px solid #02897a;
+}
+.banner-box-join:hover .banner-list,
+.banner-box-join:focus .banner-list {
+  margin-top: auto;
+}
+.banner-box-join:hover .banner-list .banner-item .join-text,
+.banner-box-join:focus .banner-list .banner-item .join-text {
+  color: #02897a;
+}
+
+/* footer */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 0.93;
+  color: #173a56;
+}
+
+.footer-container {
+}
+.footer-list {
+  display: flex;
+}
+.footer-item {
+}
+.social-list {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.social-box {
+  border-radius: 50%;
+  background-color: #edfffc;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: scale 0.5s ease;
+}
+.social-box:hover,
+.social-box:focus {
+  scale: 1.1;
+  background-color: #02897a;
+}
+
+.social-icons {
+  fill: transparent;
+  stroke: #02897a;
+}
+.social-box:hover .social-icons,
+.social-box:focus .social-icons {
+  stroke: #fff;
+}
+.resource {
+  margin-left: 146px;
+  margin-right: 129px;
+  width: 118px;
+}
+
+.legal-stuff {
+  margin-right: 83px;
+  width: 131px;
+}
+
+.footer-text-main-pages {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  color: #22343d;
+}
+
+.footer-text-pages {
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 2.1875;
+  color: #22343d;
+}
+
+.footer-form {
+  width: 325px;
+}
+
+.footer-input {
+  padding-left: 42px;
+  font-weight: 400;
+  font-size: 16px;
+  height: 44px;
+  width: 281px;
+  line-height: 1.75;
+  margin-top: auto;
+  outline: transparent;
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  border-color: #02897a;
+  background-color: #fff;
+}
+
+.footer-input::placeholder {
+  color: #02897a;
+}
+
+.telephone {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  fill: #02897a;
+}
+
+.input-phone-footer {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  position: relative;
+  transition: scale 0.5s ease;
+}
+
+.input-phone-footer:hover,
+.input-phone-footer:focus {
+  scale: 1.05;
+}
+
+.footer-text-main-pages {
+  max-width: 280px;
+}
+
+.footer-btn {
+  display: block;
+  border-radius: 4px;
+  border-color: transparent;
+  width: 131px;
+  height: 39px;
+  background: #02897a;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 16px;
+  text-align: center;
+
+  transition: scale 0.5s ease, color 0.5s ease, background-color 0.5s ease;
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+  color: #02897a;
+  background-color: #fff;
+  border-color: #02897a;
+  scale: 1.2;
+}
+
+.footer-last-text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #22343d;
 }
