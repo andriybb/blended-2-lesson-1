@@ -146,7 +146,7 @@ button:focus {
 .header-btn-watch:hover,
 .header-btn-watch:focus {
   text-decoration: none;
-  scale: 1.2;
+  scale: 1.1;
 }
 .icon-triangle {
   fill: #02897a;
@@ -160,7 +160,7 @@ button:focus {
   stroke: #02897a;
   stroke-width: 2px;
   filter: drop-shadow(0px 0px 0.5px #02897a);
-  scale: 1.5;
+  scale: 1.1;
 }
 .watch-box {
   margin: auto 0;
@@ -549,7 +549,7 @@ button:focus {
   border-color: transparent;
   width: 139px;
   height: 44px;
-  background: #02897a;
+  background-color: #02897a;
   font-weight: 600;
   font-size: 18px;
   color: #fff;
@@ -565,7 +565,7 @@ button:focus {
 .order-btn:focus {
   color: #02897a;
   background-color: #fff;
-  scale: 1.2;
+  scale: 1.1;
 }
 
 .price-box:hover h3,
@@ -684,14 +684,13 @@ button:focus {
   margin: 0 auto;
   transition: color 0.3s ease-in 0.1s, background-color 0.3s ease-in 0.1s,
     scale 0.3s ease-in-out 0.1s;
+  padding-left: 46px;
 }
 
 .banner-list {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 49px;
-  margin-left: 51px;
 }
 
 .join-text {
@@ -728,7 +727,7 @@ button:focus {
 .banner-box-join:focus {
   color: #02897a;
   background-color: transparent;
-  scale: 1.3;
+  scale: 1.05;
   border: 2px solid #02897a;
 }
 .banner-box-join:hover .banner-list,
@@ -890,7 +889,7 @@ button:focus {
   color: #02897a;
   background-color: #fff;
   border-color: #02897a;
-  scale: 1.2;
+  scale: 1.05;
 }
 
 .footer-last-text {
@@ -899,4 +898,260 @@ button:focus {
   font-size: 16px;
   line-height: 1.875;
   color: #22343d;
+}
+footer.container {
+  margin-bottom: 40px;
+}
+
+/* customers page */
+.our-clients-section {
+  padding-top: 100px;
+  padding-bottom: 117px;
+  text-align: center;
+}
+.clients {
+  font-weight: 700;
+  font-size: 40px;
+  color: #22343d;
+  margin-bottom: 50px;
+}
+.our-clients {
+  max-width: 850px;
+  height: 82px;
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.choose-product {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  color: #22343d;
+}
+.our-product-chose-section {
+  padding-top: 24px;
+  padding-bottom: 64px;
+  text-align: center;
+  background-color: #f5f5f5;
+  width: 100%;
+}
+.our-products-plus {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.choose {
+  border: 1px solid #dedede;
+  border-radius: 10px;
+
+  width: 350px;
+  height: 305px;
+  transition: color 0.5s ease, background-color 0.5s ease, scale 0.5s ease;
+}
+.choose:hover,
+.choose:focus {
+  background-color: #fff;
+  scale: 1.05;
+}
+.choose-icon {
+  border-radius: 19px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: 32px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-plus {
+  fill: #fff;
+}
+li:nth-child(1) .choose .choose-icon {
+  background-color: #02897a;
+}
+li:nth-child(2) .choose .choose-icon {
+  background-color: #4d8dff;
+}
+li:nth-child(3) .choose .choose-icon {
+  background-color: #f03e3d;
+}
+.choose-one {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.375;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #22343d;
+  margin-bottom: 16px;
+}
+.choose-text {
+  width: 275px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6875;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #22343d;
+
+  margin: 0 auto;
+}
+
+.how-product-work {
+  padding-top: 101px;
+  padding-bottom: 115px;
+}
+.product-work {
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  color: #22343d;
+}
+.work-product {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 50px;
+}
+.instruction-mac {
+  width: 1027px;
+  margin: 0 auto;
+  display: flex;
+  gap: 89px;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.instruction {
+  width: 438px;
+  margin: 0 auto;
+}
+.steps {
+  font-weight: 500;
+  font-size: 20px;
+
+  color: #22343d;
+}
+.instruction-title {
+  font-weight: 600;
+  font-size: 24px;
+
+  color: #22343d;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.instruction-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #22343d;
+}
+.get-in-btn {
+  display: block;
+  margin-top: 78px;
+  border-radius: 8px;
+  border-color: transparent;
+  width: 224px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  background-color: #02897a;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transition: scale 0.8s ease, color 0.5s ease, background-color 0.5s ease;
+}
+.get-in-btn:hover,
+.get-in-btn:focus {
+  color: #02897a;
+  background-color: #fff;
+  scale: 1.1;
+  border: #02897a solid 1px;
+}
+
+.join-offers {
+  padding-top: 35px;
+  padding-bottom: 45px;
+  width: 100%;
+  background: linear-gradient(180deg, #f5f5f5 0%, rgba(245, 245, 245, 0) 100%);
+}
+.join-agitation {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #22343d;
+  width: 537px;
+  margin: 0 auto 93px;
+}
+
+.offers-list {
+  display: flex;
+  gap: 227px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.offers-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-box {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: border 0.05s ease-in;
+}
+
+.red-circle {
+  background-color: #ffefef;
+}
+
+.red-circle:hover,
+.red-circle:focus {
+  border: #d43c3c solid 2px;
+}
+
+.blue-circle {
+  background-color: #f2f6ff;
+}
+.blue-circle:hover,
+.blue-circle:focus {
+  border: #3c5fd4 solid 2px;
+}
+.name-offers {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16667;
+  color: #000;
+  margin-top: 27px;
+  margin-bottom: 16px;
+}
+.offers-text {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.78;
+}
+.best-product {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 12px;
+  line-height: 1.75;
+  color: #000;
+}
+.banner-box-customers {
+  margin-top: 150px;
+  margin-bottom: 150px;
 }
