@@ -48,7 +48,22 @@ button:focus {
 }
 
 /* HEADER  */
-
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 9999;
+}
+main {
+  margin-top: 80px;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -210,6 +225,31 @@ button:focus {
   width: calc((100% - 90px) / 4);
   max-width: 255px;
 }
+.product-icon-box {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19px;
+}
+
+li:nth-child(1) .product-icon-box {
+  background-color: #02897a;
+}
+li:nth-child(2) .product-icon-box {
+  background-color: #4d8dff;
+}
+li:nth-child(3) .product-icon-box {
+  background-color: #740a76;
+}
+li:nth-child(4) .product-icon-box {
+  background-color: #f03e3d;
+}
+.product-icon-box svg {
+  fill: #fff;
+}
+
 .product-list-item {
   font-weight: 600;
   font-size: 22px;
@@ -312,6 +352,30 @@ button:focus {
   margin-bottom: 25px;
   max-width: 450px;
 }
+.support-list li:nth-child(1) .customer-icon-box {
+  background-color: #f90;
+}
+.support-list li:nth-child(2) .customer-icon-box {
+  background-color: #f03e3d;
+}
+.support-list li:nth-child(3) .customer-icon-box {
+  background-color: #4d8dff;
+}
+.icon-tick {
+  fill: #fff;
+}
+
+.text-support-check {
+  max-width: 385px;
+}
+.customer-icon-box {
+  border-radius: 14px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .process {
   font-weight: 700;
@@ -367,13 +431,19 @@ button:focus {
 .customer-box img {
   width: 98px;
 }
+
 .customer-text-box {
   width: 281px;
-
   align-items: center;
   fill: #fff;
   border-radius: 30px;
   box-shadow: 2px 2px 10px 0 rgba(23, 58, 86, 0.15);
+  transition: scale 0.5s ease;
+}
+
+.customer-box:hover .customer-text-box,
+.customer-box:focus .customer-text-box {
+  scale: 1.1;
 }
 .customer-text {
   margin: 13px auto;
@@ -621,12 +691,11 @@ button:focus {
   scale: 1;
   border: 1px solid #dedede;
   border-radius: 5px;
-  transition: transform 0.5s ease 0.5s, border 0.45s ease-in-out;
+  transition: border 0.45s ease-in-out;
 }
 .clients-list-item:hover,
 .clients-list-item:focus {
-  transform: scale(1.2);
-  border: 2px solid #02897a;
+  border: 0.5px solid #02897a;
 }
 .clients-feedback {
   padding: 28px 26px;
